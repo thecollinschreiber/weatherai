@@ -31,6 +31,44 @@ body {
 
 }
 
+.temp {
+
+    margin: 0;
+    font-size: 40px;
+}
+
+
+button {
+    margin: .5em;
+    border: none;
+    border-radius: 50%;
+    outline: none;
+    height: 46px;
+    width: 46px;
+    background: #7c7c7c5b;
+    color: white;
+    font-size: 120%;
+}
+
+input.search-bar {
+    border: none;
+    outline: none;
+    padding: .5em 1em;
+    border-radius: 25px;
+    background: #7c7c7c5b;
+    color: white;
+    font-family: inherit;
+    font-size: 120%;
+    width: 80%;
+}
+
+
+button:hover {
+    background: #933DFF2b;
+    cursor: pointer;
+}
+
+
 .video-background {
     position: absolute;
     right: 0;
