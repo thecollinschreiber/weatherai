@@ -26,6 +26,9 @@ let weather = {
         document.querySelector(".feels-like").innerText = "Feels like " + feels_like + " °F";
         document.querySelector(".humidity").innerText = "Humidity: " + humidity + "%";
         document.querySelector(".wind").innerText = "Wind Speed: " + speed + " mph";
+
+        document.querySelector(".weather").classList.remove("loading");
+        document.body.style.remove.backgroundImage = "url('https://source.unsplash.com/1600x900/?" + name +"')";
     },
 
     searchWeather: function() {
@@ -35,6 +38,7 @@ let weather = {
 
 document.querySelector(".search-button button").addEventListener("click", function() {
     weather.searchWeather();
+    
 });
 
 document.querySelector(".search-bar").addEventListener("keyup", function(event) {
@@ -43,3 +47,5 @@ document.querySelector(".search-bar").addEventListener("keyup", function(event) 
         weather.searchWeather();
     }
 });
+
+weather.fetchWeather("mcallen", "tx", "us");

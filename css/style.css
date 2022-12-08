@@ -6,7 +6,7 @@ body {
     margin: 0;
     font-family: 'Lato', sans-serif;
     background: #1D1C24;
-    background-image: url(/img/purple\ gradient.jpeg);
+    background-image: url(/img/purple\gradient.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -133,4 +133,8 @@ button:hover {
     }
 }
 
+.weather.loading{
+
+    visibility: hidden;
+}
 
