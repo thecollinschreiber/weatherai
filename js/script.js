@@ -28,7 +28,6 @@ let weather = {
         document.querySelector(".wind").innerText = "Wind Speed: " + speed + " mph";
 
         document.querySelector(".weather").classList.remove("loading");
-        document.body.style.remove.backgroundImage = "url('https://source.unsplash.com/1600x900/?" + name +"')";
     },
 
     searchWeather: function() {
